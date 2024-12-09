@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --white: #ffffff;
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+}
+
+
+form.login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    input {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .log-btn {
+        background-color: var(--primary-color);
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .status {
+        color: var(--accent-color);
+    }
+}
+
+.admin-footer {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
