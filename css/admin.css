@@ -52,3 +52,9 @@ form.login {
     left: 50%;
     transform: translateX(-50%);
 }
+
+table.msg-table {
+    width: 100%;
+    border: 1px solid black;
+    
+}

@@ -41,7 +41,7 @@
     border-color: #ff6347;
 }
 
-button {
+.btn {
     background-color: var(--primary-color);
     color: #fff;
     padding: 12px 25px;
@@ -53,8 +53,9 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.btn:hover {
     background-color: #e55347;
+    cursor: pointer;
 }
 
 .success {

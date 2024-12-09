@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST["send"])) {
     $name = $conn->real_escape_string($_POST['name']);
     $email = $conn->real_escape_string($_POST['email']);
     $message = $conn->real_escape_string($_POST['message']);
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <textarea id="message" name="message" rows="4" required></textarea>
             </div>
 
-            <button type="submit">Send Message</button>
+            <input type="submit" value="Send message" name="send" class="btn">
         </form>
     </section>
 
